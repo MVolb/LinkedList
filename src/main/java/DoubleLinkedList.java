@@ -211,7 +211,7 @@ public class DoubleLinkedList<T> {
      * Removes the passed T once and returns true, if it is in the list.
      *
      * @param val
-     * @return True if the Element<T>  is in the list.
+     * @return True if the T is in the list.
      */
     public boolean remove(T val) {
         Element<T> newNode = new Element<>(val);
@@ -229,7 +229,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Removes all elements from the list (don't use a loop).
+     * Removes all elements from the list.
      */
     public void clear() {
         head = null;
@@ -238,7 +238,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Returns true if the passed Element<T>  is in the list.
+     * Returns true if the passed T is in the list.
      *
      * @param val
      * @return
@@ -256,7 +256,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Returns the first Element<T>  in the list.
+     * Returns the first T in the list.
      *
      * @return The first element.
      */
@@ -265,7 +265,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Returns the last Element<T>  in the list.
+     * Returns the last T in the list.
      *
      * @return The last element.
      */
@@ -274,7 +274,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Returns the Element<T>  at the specified index (0 <= index < getSize()).
+     * Returns T at the specified index (0 <= index < getSize()).
      *
      * @param index
      * @return The element, null instead.
@@ -302,7 +302,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Rotates the list for the given positive/negative distance. The Element<T>  at position i is shifted by (i + distance) % getSize()
+     * Rotates the list for the given positive/negative distance. T at position i is shifted by (i + distance) % getSize()
      *
      * @param distance
      */
